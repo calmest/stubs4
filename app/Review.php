@@ -7,6 +7,10 @@ use Illuminate\Database\Eloquent\Model;
 class Review extends Model
 {
     public function user(){
-        return $this->belongsTo('App\user');
+        return $this->belongsTo('App\User');
+    }
+
+    public function posts(){
+        return $this->belongsTo('App\Post');
     }
 }

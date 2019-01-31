@@ -14,7 +14,11 @@ class Post extends Model
     public $timestamps = true;
 
     public function user(){
-        return $this->belongsTo('App\user');
+        return $this->belongsTo('App\User');
+    }
+
+    public function reviews(){
+        return $this->hasMany('App\Review');
     }
 
 };
