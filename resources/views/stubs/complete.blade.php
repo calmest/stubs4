@@ -129,7 +129,7 @@
         var test = $('#carusel_preview').html();
         var name = {template: test};
 
-        console.log(test);
+        //console.log(test);
 
         $orderDetailDiv.find('.form-group').removeClass('has-error');
         $orderDetailDiv.find('.error').html('');
