@@ -53,8 +53,6 @@ class PagesController extends Controller
         return view('pages.support')->with('title', $title);
     }
 
-    
-
     public function stubs() {
         return view('pages.stubs');
     }
@@ -152,12 +150,12 @@ class PagesController extends Controller
         //return $RqTpl;
         $data = Template::where('template_name',$name)->first();
         if ($data) {
-         return $data->template;           
+         return $data->template;
         }else{
             return '';
         }
 
-      
+
     }
 
     public function selectTemplate($id){
