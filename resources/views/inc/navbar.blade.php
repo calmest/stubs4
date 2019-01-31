@@ -37,7 +37,7 @@
                                 </a>
 
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item btn-success btn-lg" style="color:#fff; border-radius: 0px; display: block; width: 100%; font-size: 18px;" href="/profile">Profile</a>
+                                    <a class="dropdown-item btn-success btn-lg" style="color:#fff; border-radius: 0px; display: block; width: 100%; font-size: 18px;" href="{{ route('profile') }}">Profile</a>
                                     <a class="dropdown-item btn-primary btn-lg" style="color:#fff; border-radius: 0px; display: block;" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
