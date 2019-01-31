@@ -20,7 +20,7 @@ class UsersController extends Controller
    {
     $id = Auth::User()->id;
     $orders = Order::with('Parent')->where('user_id', '=', $id)->where('status', 1)->orderBy('created_at', 'asc')->paginate(10);
-    return view('profile.mystubs')->with('orders', $orders);
+    return view('profile.myStubs')->with('orders', $orders);
    }
    public function profile()
    {
