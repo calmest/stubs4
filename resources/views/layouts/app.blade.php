@@ -70,7 +70,7 @@
         <link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet" type="text/css" />
         <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
-        
+
 
 
 
@@ -85,7 +85,7 @@
         <!-- Favicons -->
         <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
         <link rel="icon" href="/favicon.png" type="image/x-icon">
-    
+
 
         <style type="text/css" id="notify-bootstrap">
         a{text-decoration: none !important;}
@@ -228,14 +228,14 @@
       "showMethod": "fadeIn",
       "hideMethod": "fadeOut"
     }
-    
+
     @if(Session::has('message'))
       var type = "{{ Session::get('alert', 'info') }}";
       switch(type){
           case 'info':
               toastr.info("{{ Session::get('message') }}");
               break;
-          
+
           case 'warning':
               toastr.warning("{{ Session::get('message') }}");
               break;
@@ -263,6 +263,6 @@
   @yield('footer')
 
 >
-  
+
 </body>
 </html>
