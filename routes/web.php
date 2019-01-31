@@ -54,17 +54,11 @@ Route::get('preview', 'BuildStubController@preview');
 
 /***************************
 **/
-Route::get('generateStubs', 'PagesController@generateTemplate');
-Route::get('/generateStubs/selecttpl', 'PagesController@selecttpl');
-
 
 Route::get('orders/downloads/{token}/{id}', 'OrderController@downloads');
-
-
-
 });
-
-
+Route::get('generateStubs', 'PagesController@generateTemplate');
+Route::get('/generateStubs/selecttpl', 'PagesController@selecttpl');
 
 Route::get('/dashboard', 'dashboardController@index')->name('Dashboard');
 // ROUTESS THAT ONLY ADMIN USERS CAN USE
