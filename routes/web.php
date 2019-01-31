@@ -38,7 +38,7 @@ Route::get('/employee', 'PagesController@employee');
 Route::get('/reviews/create', 'PagesController@create');
 Route::resource('users', 'UsersController');
 
-
+//Route::get('profile/mystubs', 'UsersController@mystubs');
 /***************************
 User Profile routes
 **/
