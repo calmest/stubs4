@@ -35,7 +35,7 @@ Auth::routes();
 Route::group(['middleware' => 'auth'],function(){
 Route::get('/company', 'PagesController@company');
 Route::get('/employee', 'PagesController@employee');
-Route::get('/reviews/create', 'PagesController@create');
+Route::get('/reviews/create', 'ReviewsController@create');
 Route::resource('users', 'UsersController');
 
 //Route::get('profile/mystubs', 'UsersController@mystubs');
