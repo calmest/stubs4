@@ -81,7 +81,7 @@ class OrderController extends Controller
             ]
         )
         //->grayscale()->pageSize('A2')->orientation('portrait')->lowquality();
-        /*
+
         ->setPaper('a4')
         ->setOrientation('portrait')
         ->setOption('footer-right', 'Page [page] of [toPage]     ')
@@ -110,8 +110,8 @@ class OrderController extends Controller
         ->setOption('enable-forms', true);
         $fileName = ($getData->template_name . '_stub');
         return $pdf->stream($fileName . '.pdf');
-        */
-        return view('pages.preview',compact('template' ,'name','style' ));
+
+        //return view('pages.preview',compact('template' ,'name','style' ));
 
         }else{
             return redirect()->back();
